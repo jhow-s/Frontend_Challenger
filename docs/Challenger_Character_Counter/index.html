@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="scripts/scripts.js" defer></script>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Character Counter</title>
+  </head>
+  <body>
+    <main id="container-main">
+      <div class="container-navbar">
+        <a href="#">
+          <img id="logo" src="img/logo-dark-theme.svg" alt="logo" />
+        </a>
+        <a href="#" id="theme-toggle">
+          <img src="img/icon-moon.svg" alt="theme-icon" id="theme-icon" />
+        </a>
+      </div>
+
+      <div class="container-tittle">
+        <h1>Analyze your text in real-time.</h1>
+        <textarea
+          id="container-text"
+          placeholder="Start typing here.. (or paste your text)"
+        ></textarea>
+
+        <div class="container-checkboxes">
+          <label class="container-checkbox">
+            <input type="checkbox" id="exclude-spaces" />
+            <span class="checkbox"></span>
+            <p>Exclude Spaces</p>
+          </label>
+          <label class="container-checkbox">
+            <input type="checkbox" id="set-char-limit" />
+            <span class="checkbox"></span>
+            <p>Set Character Limit</p>
+          </label>
+        </div>
+      </div>
+
+      <div class="container-count">
+        <div class="container-total">
+          <span id="total-characters">0</span>
+          <p>Total Characters</p>
+        </div>
+        <div class="container-word">
+          <span id="word-count">0</span>
+          <p>Word Count</p>
+        </div>
+        <div class="container-sentence">
+          <span id="sentence-count">0</span>
+          <p>Sentence Count</p>
+        </div>
+      </div>
+
+      <div id="container-letter-density">
+        <h3>Letter Density</h3>
+        <p id="no-text-message">
+          No characters found. Start typing to see letter density.
+        </p>
+        <ul id="letter-count-list"></ul>
+      </div>
+    </main>
+  </body>
+</html>
