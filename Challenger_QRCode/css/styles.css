@@ -6,7 +6,7 @@
 
 body {
   background-color: hsl(212, 45%, 89%);
-  font-family: "Outfit", sans-serif;
+  font-family: 'Outfit', sans-serif;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -18,44 +18,56 @@ body {
   background-color: hsl(0, 0%, 100%);
   padding: 1rem;
   border-radius: 1rem;
-  max-width: 320px;
+  max-width: 260px;
   width: 100%;
   text-align: center;
-  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .main-container img {
   width: 100%;
   height: auto;
   border-radius: 0.75rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.main-container h1,
+.main-container p {
+  padding: 0 0.75rem;
+  max-width: 220px;
+  margin: 0.5rem auto;
+  text-align: center;
+  line-height: 1.2;
 }
 
 .main-container h1 {
-  font-size: 1.25rem;
-  margin: 1rem 0 0.5rem;
+  font-size: 1rem;
   color: hsl(218, 44%, 22%);
-  font-weight: 700;
 }
 
 .main-container p {
-  font-size: 0.9375rem;
-  color: hsl(216, 15%, 48%);
-  padding: 0 1rem 1rem;
-  font-weight: 400;
+  font-size: 0.75rem;
+  color: hsl(220, 15%, 55%);
+  margin-bottom: 0.75rem;
+  line-height: 1.25;
 }
 
-/* Responsividade > 600px */
 @media (min-width: 600px) {
   .main-container {
-    max-width: 400px;
-    padding: 2rem;
+    max-width: 280px;
+  }
+
+  .main-container h1,
+  .main-container p {
+    max-width: 240px;
   }
 
   .main-container h1 {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 
   .main-container p {
-    font-size: 1.125rem;
+    font-size: 0.875rem;
   }
 }
